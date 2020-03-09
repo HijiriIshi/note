@@ -74,10 +74,11 @@ export default class Login extends Vue {
           }
           const credential = result.credential as OAuthCredential;
           const token = credential.accessToken;
+          const userInfo = result.additionalUserInfo; // Twitter ID等はこちらに格納されている
           const seacret = credential.secret;
           const user = result.user;
           if (user) {
-            this.$store.commit("setUser", user);
+            this.$store.commit("setUser", Object.assign({}, user)); // 値コピー 必要な項目だけ個別に抽出したほうがいいかも
             this.$router.push("/");
           } else {
             alert("有効なアカウントではありません");

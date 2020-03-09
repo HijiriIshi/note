@@ -20,3 +20,6 @@ Home
 ```
 
 * [プロジェクトの作成-vuets](project/exitter-vuets/プロジェクトの作成-vuets.md)
+* [FirebaseによるTwitter認証-vuets](project/exitter-vuets/FirebaseによるTwitter認証-vuets.md)
+* [名前付きビューを使ってナビゲーションバーを作る-vuets](project/exitter-vuets/名前付きビューを使ってナビゲーションバーを作る-vuets.md)
+* [mapStateを使ってVuexの状態をMapする-vuets](project/exitter-vuets/mapStateを使ってVuexの状態をMapする-vuets.md)
