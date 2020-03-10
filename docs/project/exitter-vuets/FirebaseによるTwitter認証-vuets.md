@@ -6,7 +6,7 @@ FirebaseによるTwitter認証
 2. Authentication にて Twitter を有効にする
 3. Firebase プロジェクトにウェブアプリを登録
    スクリプトが出力される.
-   ```html
+   ```
    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
 
@@ -33,7 +33,7 @@ FirebaseによるTwitter認証
    ```
 4. `npm install firebase`
 5. 3.を元に`src/main.ts`に初期化コードを追加
-    ```typescript
+    ```
     import firebase from "firebase"
     // ...
     var firebaseConfig = {
@@ -55,7 +55,7 @@ FirebaseによるTwitter認証
 Note! Firebase Api Key は公開してOK.`<script src="/__/firebase/init.js"></script>`にて参照できるようになっている。
 
 ## ログインコード
-```ts
+```
 import { Component, Prop, Vue } from "vue-property-decorator";
 import firebase from "firebase";
 import { OAuthCredential } from "@firebase/auth-types";
@@ -93,7 +93,7 @@ export default class Login extends Vue {
 ```
 
 Vuex の store
-```ts
+```
 import Vue from "vue";
 import Vuex from "vuex";
 import { User } from "firebase";

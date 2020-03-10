@@ -4,7 +4,7 @@ mapStateを使ってVuexの状態をMapする
 Typescriptだとちょいめんどい。
 
 以下の `State` を扱う場合、
-```typescript
+```
 // store/index.ts
 import Vue from "vue";
 import Vuex from "vuex";
@@ -36,7 +36,7 @@ export default new Vuex.Store({
 
 ```
 
-```typescript
+```
 // Navigation.vue
 import { Component, Vue} from "vue-property-decorator";
 import { mapState } from 'vuex';
@@ -57,7 +57,7 @@ export default class Navigation extends Vue {
 ```
 
 もしかしたら `@Component` は以下のほうが正道かも
-```typescript
+```
 @Component({
     computed: mapState({
         userName: (state: any, getter: State) => getter.user && getter.user.displayName,
